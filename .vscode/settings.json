@@ -1,0 +1,61 @@
+{
+  "files.associations": {
+    "*.css": "postcss"
+  },
+
+  // Enable the ESlint flat config support
+  "eslint.experimental.useFlatConfig": true,
+
+  // Disable the default formatter, use eslint instead
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+
+  // Silent the stylistic rules in you IDE, but still auto fix them
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off" },
+    { "rule": "*-indent", "severity": "off" },
+    { "rule": "*-spacing", "severity": "off" },
+    { "rule": "*-spaces", "severity": "off" },
+    { "rule": "*-order", "severity": "off" },
+    { "rule": "*-dangle", "severity": "off" },
+    { "rule": "*-newline", "severity": "off" },
+    { "rule": "*quotes", "severity": "off" },
+    { "rule": "*semi", "severity": "off" }
+  ],
+
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ],
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#5ffc96",
+    "titleBar.activeForeground": "#FFFFFF",
+    "titleBar.inactiveBackground": "#5ffc96",
+    "titleBar.inactiveForeground": "#FFFFFF",
+    "titleBar.border": "#5ffc96",
+    "activityBar.background": "#5ffc96",
+    "activityBar.foreground": "#FFFFFF",
+    "statusBar.background": "#5ffc96",
+    "statusBar.foreground": "#FFFFFF",
+    "statusBar.debuggingBackground": "#5ffc96",
+    "statusBar.debuggingForeground": "#FFFFFF",
+    "tab.activeBorder": "#5ffc96",
+    "iLoveWorkSpaceColors": true,
+    "iLoveWorkSpaceRandom": false
+  }
+}
