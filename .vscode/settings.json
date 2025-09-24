@@ -3,9 +3,6 @@
     "*.css": "postcss"
   },
 
-  // Enable the ESlint flat config support
-  "eslint.experimental.useFlatConfig": true,
-
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
   "editor.formatOnSave": false,
@@ -42,20 +39,7 @@
     "jsonc",
     "yaml"
   ],
-  "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#5ffc96",
-    "titleBar.activeForeground": "#FFFFFF",
-    "titleBar.inactiveBackground": "#5ffc96",
-    "titleBar.inactiveForeground": "#FFFFFF",
-    "titleBar.border": "#5ffc96",
-    "activityBar.background": "#5ffc96",
-    "activityBar.foreground": "#FFFFFF",
-    "statusBar.background": "#5ffc96",
-    "statusBar.foreground": "#FFFFFF",
-    "statusBar.debuggingBackground": "#5ffc96",
-    "statusBar.debuggingForeground": "#FFFFFF",
-    "tab.activeBorder": "#5ffc96",
-    "iLoveWorkSpaceColors": true,
-    "iLoveWorkSpaceRandom": false
-  }
+  "interline-translate.knownPopularWordCount": 6000,
+  "iconify.annotations": true,
+  "iconify.inplace": true
 }
