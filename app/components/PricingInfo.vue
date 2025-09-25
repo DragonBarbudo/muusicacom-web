@@ -1,6 +1,6 @@
 <template>
 
-<div class="grid grid-cols-2 gap-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
 <div class="card w-96 bg-sky-900 shadow-sm mx-auto">
   <div class="card-body">
