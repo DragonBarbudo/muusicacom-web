@@ -1,11 +1,11 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.17.1+sha512.17c560fca4867ae9473a3899ad84a88334914f379be46d455cbf92e5cf4b39d34985d452d2583baf19967fa76cb5c17bc9e245529d0b98745721aa7200ecaf7a",
+  "packageManager": "pnpm@10.17.1",
   "scripts": {
     "build": "nuxt build",
-    "dev:pwa": "VITE_PLUGIN_PWA=true nuxt dev",
-    "dev": "nuxt dev",
+    "dev:pwa": "NUXT_DEVTOOLS=disabled VITE_PLUGIN_PWA=true nuxt dev",
+    "dev": "NUXT_DEVTOOLS=disabled nuxt dev --host",
     "generate": "nuxt generate",
     "prepare": "nuxt prepare",
     "preview": "nuxt preview",
@@ -18,7 +18,6 @@
     "@antfu/eslint-config": "catalog:dev",
     "@iconify-json/carbon": "catalog:icons",
     "@iconify-json/twemoji": "catalog:icons",
-    "@nuxt/devtools": "catalog:build",
     "@nuxt/eslint": "catalog:build",
     "@nuxtjs/color-mode": "catalog:build",
     "@pinia/nuxt": "catalog:build",
@@ -38,14 +37,20 @@
     "vue-tsc": "catalog:dev"
   },
   "resolutions": {
-    "@nuxt/devtools": "catalog:build",
     "@nuxt/kit": "catalog:build",
     "nuxt": "catalog:build",
     "unplugin": "catalog:build",
     "vite": "catalog:build"
   },
+  "pnpm": {
+    "overrides": {
+
+    }
+  },
   "dependencies": {
-    "@ameinhardt/unocss-preset-daisy": "^1.1.8",
-    "daisyui": "^5.1.17"
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-fade": "^8.6.0",
+    "embla-carousel-vue": "^8.6.0",
+    "wavesurfer.js": "^7.11.0"
   }
 }
